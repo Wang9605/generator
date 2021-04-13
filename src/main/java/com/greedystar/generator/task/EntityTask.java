@@ -59,7 +59,7 @@ public class EntityTask extends AbstractTask {
         entityData.put("Methods", entityMethods(invoker));
         String filePath = FileUtil.getSourcePath() + StringUtil.package2Path(ConfigUtil.getConfiguration().getPackageName())
                 + StringUtil.package2Path(ConfigUtil.getConfiguration().getPath().getEntity());
-        String fileName = ConfigUtil.getConfiguration().getName().getEntity().replace(Constant.PLACEHOLDER, className) + ".java";
+        String fileName = className + ".java";
         // 生成Entity文件
         FileUtil.generateToJava(FreemarkerConfigUtil.TYPE_ENTITY, entityData, filePath, fileName);
     }
