@@ -13,7 +13,7 @@ import com.greedystar.generator.invoker.base.Invoker;
 public class Main {
 
     public static void main(String[] args) {
-
+        single();
     }
 
     public static void many2many() {
